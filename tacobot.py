@@ -7,7 +7,6 @@ Created on Sun May  8 19:52:35 2022
 
 
 import os
-import json
 import requests
 import pandas
 from pandas import read_csv
