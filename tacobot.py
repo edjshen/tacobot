@@ -26,7 +26,7 @@ jsonString = """
     "token": "d279ea60-cf19-11ec-8f1f-f3a7959f03f6",
     "uid": "U03CET7481X",
     "amount": 1,
-    "message": "MESSAGE (optional)"
+    "message": "test"
   }
 
 """
