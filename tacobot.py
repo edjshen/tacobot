@@ -48,7 +48,7 @@ if __name__ == "__main__":
                 "token": "d279ea60-cf19-11ec-8f1f-f3a7959f03f6",
                 "uid": "{}",
                 "amount": 5,
-                "message": "test"
+                "message": "Happy Birthday! Here's some tacos to celebrate!!"
               }
 
             """.format(file[i]["id"])
