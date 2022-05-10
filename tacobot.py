@@ -12,7 +12,7 @@ import requests
 import pandas
 from pandas import read_csv
 
-csv_filepath = os.path.join(os.path.dirname(__file__), "..", "board bday.csv")
+csv_filepath = os.path.join(os.path.dirname(__file__), "board bday.csv")
 
 #reads the csv file into products variable
 f = read_csv(csv_filepath)
