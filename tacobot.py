@@ -11,6 +11,12 @@ import json
 import requests
 import pandas
 from pandas import read_csv
+import datetime
+from datetime import date
+
+
+
+
 
 csv_filepath = os.path.join(os.path.dirname(__file__), "board bday.csv")
 
@@ -19,7 +25,7 @@ f = read_csv(csv_filepath)
 #pandas transforms the data into a list of dictionaries
 file = f.to_dict('records')
 
-    
+
 jsonString = """
 
  {
@@ -32,6 +38,21 @@ jsonString = """
 """
 
 if __name__ == "__main__":
-    url = "https://www.heytaco.chat/api/app.giveTaco"
-    give = requests.post(url, data = jsonString)
-    print(give.status_code)
+    i = 0
+    while(i<len(file)):
+        if(date.today() == file[i]["bday"]):
+            url = "https://www.heytaco.chat/api/app.giveTaco"
+            jsonString = """
+
+             {
+                "token": "d279ea60-cf19-11ec-8f1f-f3a7959f03f6",
+                "uid": "{}",
+                "amount": 5,
+                "message": "test"
+              }
+
+            """.format(file[i]["id"])
+            
+            give = requests.post(url, data = jsonString)
+            print(give.status_code)
+        i = i+1
