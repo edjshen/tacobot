@@ -44,7 +44,7 @@ if __name__ == "__main__":
             jsonString = """
 
              {
-                "token": "d279ea60-cf19-11ec-8f1f-f3a7959f03f6",
+                "token": "7167b510-d0b6-11ec-80f4-4b3f5ed348cb",
                 "uid": "{}",
                 "amount": 5,
                 "message": "Happy Birthday! Here's some tacos to celebrate!!"
