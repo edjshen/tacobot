@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
              {
                 "token": "7167b510-d0b6-11ec-80f4-4b3f5ed348cb",
-                "uid": "{}",
+                "uid": "{}", 
                 "amount": 5,
                 "message": "Happy Birthday! Here's some tacos to celebrate!!"
               }
